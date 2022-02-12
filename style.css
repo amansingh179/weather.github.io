@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0.6;
+    height: 100vh;
+    z-index: -1;
+    background:url("https://source.unsplash.com/user/erondu/1600x900");
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    border: 2px solid black;
+    display: block;
+    height: 550px;
+    width: 500px;
+    margin: 78px auto;
+    background-color: rgb(234 191 191 / 48%);
+    box-shadow: 4px 11px 14px 2px;
+    border-radius: 50px;
+
+
+}
+.find{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+
+}
+#search{
+    padding: 8px;
+    font-size:25px;
+    padding: 8px;
+    font-size: 25px;
+    background: #eaa2b4;
+
+}
+input{
+    height: 50px;
+    width: 410px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    outline: none;
+
+}
+.button{
+    margin: 5px 13px;
+    height: 26px;
+    background-color: white;
+    width: 30px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#search:hover,.button:hover{
+    cursor: pointer;
+    zoom: 120%;
+}
+
+
+
+
+.weather{
+    padding: 24px 24px;
+}
+.city{
+    font-size: 40px;
+}
+.temp{
+    font-size: 5em;
+}
+.WeatherConditionImage,
+.WeatherCondition{
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'Baloo Bhaijaan 2', cursive;   
+    font-size: 1.4em;
+}
+#iconimg{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.wind,.humidity,.pressure{
+    padding: 4px;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px 0px;
+}
+.starting{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 540px) {
+    .container{
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        height: 550px;
+        width: 250px;
+    }
+    .find{
+        font-size: 0.6em;
+
+    }
+    input{
+        max-width: 90px;
+        
+    }
+    #search{
+        font-size: 2em;
+        padding: 5px;
+    }
+    .WeatherConditionImage
+    {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .WeatherCondition.humidity.wind.pressure{
+        font-size: 0.9em;
+    }
+    .temp{
+        font-size: 2em;
+
+    }
+    .footer{
+        bottom: 0px;
+        position: absolute;
+        font-size: 1em;
+    }
+    
+  }
