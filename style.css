@@ -113,9 +113,8 @@ input{
 
 @media only screen and (max-width: 540px) {
     .container{
-        position: absolute;
-        top: 10px;
-        left: 60px;
+        display: block;
+        margin: 2px auto;
         height: 550px;
         width: 250px;
     }
@@ -145,7 +144,7 @@ input{
     }
     .footer{
         bottom: 0px;
-        position: absolute;
+        position: relative;
         font-size: 1em;
     }
     
