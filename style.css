@@ -114,7 +114,7 @@ input{
 @media only screen and (max-width: 540px) {
     .container{
         display: block;
-        margin: 70px auto;
+        margin: 20px auto;
         height: 550px;
         width: 250px;
     }
